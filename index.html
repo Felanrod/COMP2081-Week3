@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Carousel | Bootstrap</title>
+
+		<!-- Bootstrap -->
+		<!-- STEP 1: Link to the Bootstrap CSS using a Content Distribution Network (CDN), and the Bootstrap JS libraries (jQuery, popper.js, and bootstrap.js) at the bottom of the page template -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+
+		<!-- STEP 9b: Add more icon fonts - try FontAwesome - link to the CDN -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!-- STEP 11: Link to your custom styles, then open the CSS file in your code editor -->
+		<link rel="stylesheet" href="css/custom.css" />
+
+	</head>
+	<body>
+		<!-- STEP 2: Build a fluid or a fixed-width container for proper alignment and padding of content-->
+		<div class="container">
+		<!-- STEP 3: Build out your basic page-level containers, HEADER, MAIN, FOOTER,and add an H1 inside the HEADER to begin the document outline -->
+			<header>
+				<h1>Carousel | Bootstrap</h1>
+			</header>
+		<!-- STEP 4: Copy the example code from the Bootstrap documentation (use the handy "COPY" button to the top right of the code example panel), paste here, and adjust formatting -->
+		<!-- STEP 5: Replace any generic elements with more semantic sectioning or phrasing elements - add all appropriate classes to elements -->
+		<!-- STEP 6: Add a caption to each slide -->
+		<!-- STEP 7: Add a placeholder image for each slide (http://via.placeholder.com/1200x400) -->
+		<!-- STEP 8: Add a third slide, and point IMG elements to photos of cars provided in img/ directory -->
+		<!-- STEP 9a: Add the next/prev icons (add the HTML with the appropriate classes below) -->
+		<!-- STEP 9c: Change the icons - consult FontAwesome to pick a new set of arrows and insert below -->
+		<!-- STEP 10: Let's change the position of the captions - go to STEP 11 above -->
+			<main>
+				<div id="carousel-cars" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-cars" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-cars" data-slide-to="1"></li>
+						<li data-target="#carousel-cars" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<figure class="carousel-item active">
+							<img class="d-block w-100" src="img/car1.jpg" alt="First slide">
+							<figcaption class="carousel-caption">
+								<h2>Slide 1</h2>
+								<p>This is a image</p>
+							</figcaption>
+						</figure>
+						<figure class="carousel-item">
+							<img class="d-block w-100" src="img/car2.jpg" alt="Second slide">
+							<figcaption class="carousel-caption">
+								<h2>Slide 2</h2>
+								<p>This is a image</p>
+							</figcaption>
+						</figure>
+						<figure class="carousel-item">
+							<img class="d-block w-100" src="img/car3.jpg" alt="Third slide">
+							<figcaption class="carousel-caption">
+								<h2>Slide 3</h2>
+								<p>This is a image</p>
+							</figcaption>
+						</figure>
+					</div><!--.carousel-inner-->
+					<!-- Controls -->
+					<a class="carousel-control-prev" href="#carousel-cars" role="button" data-slide="prev">
+						<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+						<span class="fas fa-arrow-circle-left fa-5x" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel-cars" role="button" data-slide="next">
+						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+						<span class="fas fa-arrow-circle-right fa-5x" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div><!--#carousel-cars-->
+			</main>
+			<footer>
+				<p><small>Learn more about the <a href="http://getbootstrap.com/docs/4.1/components/carousel/" title="View the Bootstrap documentation for the JavaScript Carousel Component">Bootstrap Carousel JavaScript Component</a>.</small></p>
+			</footer>
+		</div> <!-- Container -->
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!-- STEP 14: Use custom JavaScript to control the carousel. Attach js/custom.js below -->
+		<script src="js/custom.js"></script>
+		<!-- IMAGE ATTRIBUTIONS
+
+		https://www.flickr.com/photos/songzhen/6000306219/
+		song zhen
+		automoblox c9r sport car
+		car1.jpg
+
+		https://www.flickr.com/photos/basknight/19038911481/
+		Baldwin Saintilus
+		ToyF15_0315bas
+		car2.jpg
+
+		https://www.flickr.com/photos/littlemonkeybutt/3144854729/
+		Katie Levesque
+		{363} automoblox
+		car3.jpg
+
+		https://www.flickr.com/photos/studiocurve/287624936/
+		studio curve
+		Automoblox T9
+		car4.jpg
+
+		https://www.flickr.com/photos/alan_cys/5637805540/
+		艾倫周
+		P1000908
+		car5.jpg
+
+		-->
+	</body>
+</html>
